@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/EngsCompany/static/css/main.86b30c20.css",
-    "main.js": "/EngsCompany/static/js/main.369dea55.js",
+    "main.css": "/EngsCompany/static/css/main.df84dc5f.css",
+    "main.js": "/EngsCompany/static/js/main.52852640.js",
     "static/js/787.c2cc3207.chunk.js": "/EngsCompany/static/js/787.c2cc3207.chunk.js",
     "static/media/company1.jpg": "/EngsCompany/static/media/company1.a867d92424e7cb8e0d03.jpg",
     "static/media/villa1.jpeg": "/EngsCompany/static/media/villa1.daaa437ed5e059743140.jpeg",
     "static/media/market.jpg": "/EngsCompany/static/media/market.418db59de0d1fdc190c5.jpg",
     "static/media/engineer.jpg": "/EngsCompany/static/media/engineer.5585702b9f8856017629.jpg",
     "index.html": "/EngsCompany/index.html",
-    "main.86b30c20.css.map": "/EngsCompany/static/css/main.86b30c20.css.map",
-    "main.369dea55.js.map": "/EngsCompany/static/js/main.369dea55.js.map",
+    "main.df84dc5f.css.map": "/EngsCompany/static/css/main.df84dc5f.css.map",
+    "main.52852640.js.map": "/EngsCompany/static/js/main.52852640.js.map",
     "787.c2cc3207.chunk.js.map": "/EngsCompany/static/js/787.c2cc3207.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.86b30c20.css",
-    "static/js/main.369dea55.js"
+    "static/css/main.df84dc5f.css",
+    "static/js/main.52852640.js"
   ]
 }
