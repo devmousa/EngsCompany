@@ -34,7 +34,7 @@ export default class Main extends React.Component<Props> {
                             <h1 style={{textAlign: "center"}}>Your <Typed strings={['house', 'company', 'market']} typeSpeed={40} backSpeed={50} loop /> <br /> starts here</h1>
                             <p className='text-center'>Book now and build your dream <Typed strings={['home', 'firm', 'shop']} typeSpeed={40} backSpeed={20} loop /> <FontAwesomeIcon className='icon-style' icon={solid('house')} /> <FontAwesomeIcon className='icon-style' icon={solid('building')} /> <FontAwesomeIcon className='icon-style' icon={solid('shop')} /></p>
                         </Col>
-                        <Col lg={8} className='icon-container'>
+                        <Col lg={8} className='icon-container d-none d-lg-block'>
                             <FontAwesomeIcon className='icon-house' icon={solid('house')} />
                             <FontAwesomeIcon className='icon-building' icon={solid('building')} />
                             <FontAwesomeIcon className='icon-shop' icon={solid('shop')} />

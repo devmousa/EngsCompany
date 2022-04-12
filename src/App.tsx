@@ -2,7 +2,6 @@ import { BrowserRouter, Route, Routes, useLocation } from 'react-router-dom';
 import './styles/transition.scss';
 import { TransitionGroup, CSSTransition } from 'react-transition-group';
 import Header from './components/Header';
-import Footer from './components/Footer';
 import Main from './pages/Main'
 import About from './pages/About';
 
