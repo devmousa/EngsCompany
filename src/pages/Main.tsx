@@ -14,7 +14,16 @@ import Villa from '../images/villa1.jpeg'
 import Company from '../images/company1.jpg'
 import Market from '../images/market.jpg'
 
-export default class Main extends React.Component {
+
+export type Props = {
+    title: string;
+  }
+
+export default class Main extends React.Component<Props> {
+    constructor(props: Props) {
+        super(props)
+        document.title = this.props.title
+    }
     render() {
         return (
             <Container fluid className='px-0 mx-0'>

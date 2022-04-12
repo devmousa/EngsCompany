@@ -12,8 +12,8 @@ const App = () => {
         <TransitionGroup component={null} >
             <CSSTransition key={location.key} classNames="fade" timeout={350} >
                 <Routes location={location}>
-                    <Route path="/EngsCompany/" element={<Main />} />
-                    <Route path='/EngsCompany/about' element={<About />} />
+                    <Route path="/EngsCompany/" element={<Main title="Engs Company" />} />
+                    <Route path='/EngsCompany/about' element={<About title="Engs Company - About" />} />
                     <Route path='*' element={<Header />} />
                 </Routes>
             </CSSTransition>
