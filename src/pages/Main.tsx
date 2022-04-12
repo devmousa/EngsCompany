@@ -47,7 +47,7 @@ export default class Main extends React.Component {
                                 <Card.Text>
                                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Error ut provident perferendis cum. Odio perspiciatis aliquid nobis atque rem tempore omnis impedit, tempora voluptate, expedita culpa eaque harum doloremque, corporis earum aut. Consectetur, temporibus vel placeat eaque cumque laborum architecto provident a atque aliquam saepe molestias deserunt, dolor harum officiis commodi mollitia numquam dolores quos recusandae similique eos, dignissimos earum.
                                 </Card.Text>
-                                <Link to='/about' className='btn btn-success'>About us</Link>
+                                <Link to='/EngsCompany/about' className='btn btn-success'>About us</Link>
                             </Card.Body>
                         </Col>
                     </Row>
@@ -63,7 +63,7 @@ export default class Main extends React.Component {
                                 <Card.Text>
                                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Error ut provident perferendis cum. Odio perspiciatis aliquid nobis atque rem tempore omnis impedit, tempora voluptate, expedita culpa eaque harum doloremque, corporis earum aut. Consectetur, temporibus vel placeat eaque cumque laborum architecto provident a atque aliquam saepe molestias deserunt, dolor harum officiis commodi mollitia numquam dolores quos recusandae similique eos, dignissimos earum.
                                 </Card.Text>
-                                <Link to='/services' className='btn btn-primary'>See Our Services</Link>
+                                <Link to='/EngsCompany/services' className='btn btn-primary'>See Our Services</Link>
                             </Card.Body>
                         </Col>
                     </Row>
@@ -79,7 +79,7 @@ export default class Main extends React.Component {
                                 <Card.Text>
                                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Error ut provident perferendis cum. Odio perspiciatis aliquid nobis atque rem tempore omnis impedit, tempora voluptate, expedita culpa eaque harum doloremque, corporis earum aut. Consectetur, temporibus vel placeat eaque cumque laborum architecto provident a atque aliquam saepe molestias deserunt, dolor harum officiis commodi mollitia numquam dolores quos recusandae similique eos, dignissimos earum.
                                 </Card.Text>
-                                <Link to='/prices' className='btn btn-warning'>Take A Look</Link>
+                                <Link to='/EngsCompany/prices' className='btn btn-warning'>Take A Look</Link>
                             </Card.Body>
                         </Col>
                     </Row>

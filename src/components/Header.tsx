@@ -41,7 +41,7 @@ class Header extends React.Component<Props> {
     return (
 <Navbar style={{width: '100%'}} bg={`${this.state.theme === 'light' ? 'light' : 'dark'}`} variant={`${this.state.theme === 'light' ? 'light' : 'dark'}`} expand="lg">
      <Container fluid>
-       <Link className="navbar-brand" to='/'>Engs</Link>
+       <Link className="navbar-brand" to='/EngsCompany/'>Engs</Link>
        <div className="pe-5 pe-lg-0"><Button className="me-2" onClick={this.changeTheme} variant={`${this.state.theme === 'light' ? 'dark' : 'light'}`}><FontAwesomeIcon icon={this.state.theme === 'light' ? solid('moon') : solid('sun')} /></Button></div>
        <Navbar.Toggle aria-controls="navbarScroll" />
        <Navbar.Collapse id="navbarScroll">
@@ -50,10 +50,10 @@ class Header extends React.Component<Props> {
            style={{ maxHeight: '100px' }}
            navbarScroll
          >
-           <Link className='nav-link' to='/'>Home</Link>
-           <Link className='nav-link' to="/about">About</Link>
-           <Link className='nav-link' to="/services">Services</Link>
-           <Link className='nav-link' to="/prices">Prices</Link>
+           <Link className='nav-link' to='/EngsCompany/'>Home</Link>
+           <Link className='nav-link' to="/EngsCompany/about">About</Link>
+           <Link className='nav-link' to="/EngsCompany/services">Services</Link>
+           <Link className='nav-link' to="/EngsCompany/prices">Prices</Link>
          </Nav>
        </Navbar.Collapse>
      </Container>
