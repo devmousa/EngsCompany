@@ -1,3 +1,4 @@
+// @flow
 import React from "react"
 import { Link } from "react-router-dom"
 // import logo from '../images/studying.png'
@@ -27,6 +28,12 @@ class Header extends React.Component<Props> {
       this.setState({theme: 'light'})
       localStorage.setItem('theme', 'light')
     }
+    document.documentElement.style.overflow = "hidden";
+    document.documentElement.setAttribute(
+      "data-color-scheme",
+      this.state.theme === "dark" ? "light" : "dark"
+    );
+    document.documentElement.style.overflow = "";
   }
   render() {
     let dark: boolean = document.body.classList.contains('dark');

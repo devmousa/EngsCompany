@@ -23,6 +23,12 @@ export default class Main extends React.Component<Props> {
     constructor(props: Props) {
         super(props)
         document.title = this.props.title
+        document.documentElement.style.overflow = "hidden";
+        document.documentElement.setAttribute(
+          "data-color-scheme",
+          document.body.classList.contains('dark') ? "dark" : "light"
+        );
+        document.documentElement.style.overflow = "";
     }
     render() {
         return (
