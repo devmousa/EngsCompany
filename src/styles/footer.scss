@@ -1,0 +1,21 @@
+
+.dark {
+    & footer {
+        background: rgb(33, 37, 41);
+        color: #f9f9f9;
+        & .icon-style {
+            color: #ef2323;
+        }
+    }
+}
+footer {
+    transition: .4s;
+    background: #f9f9f9;
+    color: #121212;
+    padding: 1rem 0;
+    & .icon-style {
+        transition: .45s;
+        color: #cf2323;
+        padding: 0 0.25rem;
+    }
+}

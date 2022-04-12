@@ -1,0 +1,187 @@
+.head {
+    user-select: none;
+    transition: .4s;
+    padding: 1rem 0;
+    background: rgba(217, 229, 230, 0.411);
+    & .headline {
+        color: rgba(0, 234, 255, 0.611);
+        text-shadow: 0px 0px 2px rgba(22, 22, 22, 0.611);
+    }
+    & .icon-style {
+        color: #aeaefe;
+    }
+    & .icon-container {
+        position: relative;
+        height: 80vh;
+        @media screen and (max-width: 768px) {
+            height: 20vh;
+        }
+    }
+    & .icon-house {
+        color: rgba(0, 225, 233, 0.5);
+        font-size: 8rem;
+        position: absolute;
+        right: 45%;
+        top: 0%;
+        animation: icon-house 3s ease-in-out 1s infinite;
+        @media screen and (max-width: 786px) {
+            font-size: 2rem;
+        }
+    }
+    & .icon-building {
+        color: rgba(0, 225, 233, 0.5);;
+        font-size: 8rem;
+        position: absolute;
+        right: 80%;
+        top: 75%;
+        animation: icon-building 3s ease-in-out 1s infinite;
+        @media screen and (max-width: 786px) {
+            font-size: 2rem;
+        }
+    }
+    & .icon-shop {
+        color: rgba(0, 225, 233, 0.5);;
+        font-size: 8rem;
+        position: absolute;
+        right: 10%;
+        top: 75%;
+        animation: icon-shop 3s ease-in-out 1s infinite;
+        @media screen and (max-width: 786px) {
+            font-size: 2rem;
+        }
+    }
+    & .icon-center {
+        font-size: 2.4rem;
+        position: absolute;
+        right: 41.5%;
+        top: 45%;
+        color: #99aaef01;
+        background: linear-gradient(to right, #99aaef, #66aeae, #3fbfae);
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-stroke: 1px transparent;
+        animation: welcome 3s linear 1s infinite;
+        @media screen and (max-width: 480px) {
+            font-size: 1.2rem;
+            right: 37.5%;
+        }
+    }
+}
+.dark {
+    & .head {
+        background: rgb(37, 43, 47);
+        & .headline {
+            color: rgba(0, 233, 255, 0.8);
+            text-shadow: 0 0 2px rgba(0, 62, 68, 0.051);
+        }
+        & .icon-style {
+            color: #bcbcff;
+        }
+        & .icon-house {
+            color: #4964c4;
+        }
+        & .icon-building {
+            color: #4964c4;
+        }
+        & .icon-shop {
+            color: #4964c4;
+        }
+    }
+    & .about-home {
+        background: rgb(35, 40, 45);
+        & .card-colors {
+            background: rgb(35, 40, 45);
+            color: #f9f9ff;
+            & img {
+                filter: grayscale(50%);
+            }
+        }
+    }
+    & .works {
+        background: rgb(37, 43, 47);
+        color: #f9f9f9;
+        & .card-style {
+            background: rgb(25, 33, 40);
+            color: #f9f9f9;
+            border-bottom: solid 2px #fafafa;
+        }
+    }
+    & .contact {
+        background: rgb(35, 40, 45);
+        color: #f9f9f9cf;
+    }
+}
+@keyframes icon-house {
+    0% {right: 45%; top: 0%;}
+    33% {right: 10%; top: 75%;}
+    66% {right: 80%; top: 75%;}
+    100% {right: 45%; top: 0%;}
+}
+@keyframes icon-building {
+    0% {right: 80%; top: 75%;}
+    33% {right: 45%; top: 0%;}
+    66% {right: 10%; top: 75%;}
+    100% {right: 80%; top: 75%;}
+}
+@keyframes icon-shop {
+    0% {right: 10%; top: 75%;}
+    33% {right: 80%; top: 75%;}
+    66% {right: 45%; top: 0%;}
+    100% {right: 10%; top: 75%;}
+}
+.about-home {
+    padding: 2rem 0;
+    transition: .45s;
+    background: #fafafa;
+    & .card-colors {
+        background: #fafafa;
+        border: none;
+    }
+}
+.works {
+    padding: 2rem 0;
+    & .card-style {
+        width: 18rem;
+        border: none;
+        border-bottom: solid 2px #121212;
+        margin: 1rem auto;
+        overflow: hidden;
+        & img {
+            transition: .5s ease;
+            &:hover {
+                transform: scale(2);
+            }
+        }
+        & div {
+            z-index: 2;
+            background: inherit;
+            border-radius: 20px 20px 0 0;
+        }
+    }
+}
+@keyframes welcome {
+    0% {        background: linear-gradient(to right, #99aaef, #66aeae, #3fbfae);
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-stroke: 1px transparent;
+    transform: scale(1);    }
+    33% {        background: linear-gradient(to right, #3fbfae, #99aaef, #66aeae);
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-stroke: 1px transparent;
+        transform: scale(1.2);    }
+    66% {        background: linear-gradient(to right, #66aeae, #3fbfae, #99aaef);
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-stroke: 1px transparent;
+        transform: scale(1.2);    }
+    100% {        background: linear-gradient(to right, #99aaef, #66aeae, #3fbfae);
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-stroke: 1px transparent;
+        transform: scale(1);    }
+}
+.contact {
+    padding: 2rem 0;
+    background: #fefffe;
+}

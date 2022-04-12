@@ -1,26 +1,27 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter, Route, Routes, useLocation } from 'react-router-dom';
+import './styles/transition.scss';
+import { TransitionGroup, CSSTransition } from 'react-transition-group';
+import Header from './components/Header';
+import Footer from './components/Footer';
+import Main from './pages/Main'
+import About from './pages/About';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+const App = () => {
+    const location = useLocation()
+    return (
+        <TransitionGroup component={null} >
+            <CSSTransition key={location.key} classNames="fade" timeout={350} >
+                <Routes location={location}>
+                    <Route path="/" element={<Main />} />
+                    <Route path='/about' element={<About />} />
+                    <Route path='/footer' element={<Footer />} />
+                    <Route path='*' element={<Header />} />
+                </Routes>
+            </CSSTransition>
+        </TransitionGroup>
+    )
 }
 
-export default App;
+const Root = () => <BrowserRouter><App/></BrowserRouter>
+
+export default Root
